@@ -279,8 +279,7 @@ body {
 .box {
   margin: 0 10%;
   height: 630px;
-  padding: 0 0 40px 60px;
-  border: red solid 2px;
+  padding: 0 0 40px 0;
 }
 
 .box ul {
@@ -298,7 +297,7 @@ body {
 .box ul:last-of-type {
   top: 80px;
   border: bisque solid 2px;
-  padding-bottom: 300px;
+  margin-bottom: 300px;
 }
 
 .box ul:before {
@@ -344,7 +343,7 @@ body {
   background: #e3be58;
   border: 2px solid #fff;
   position: absolute;
-  left: -7.5px;
+  left: -4.5px;
 }
 
 .box ul li > span:before {
@@ -390,7 +389,53 @@ body {
   top: 94%;
 }
 
-.test {
-  border: pink solid 2px;
-  padding-top: 400px;
+.header .title {
+  font-family: "Montserrat", sans-serif;
+  background-color: #000000;
+  color: #ffffff;
+  font-size: 40px;
+  font-weight: 900;
+  text-align: center;
+  margin: 0;
+}
+
+.header .banner {
+  width: 100%;
+  opacity: 0.8;
+  display: block;
+  border: #000000 solid 1px;
+}
+
+.header .days {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  font-family: "Montserrat", sans-serif;
+  margin-top: 20px;
+  width: auto;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.header .days h1 {
+  background-image: url(/assets/red.png);
+  background-size: 100%;
+  background-repeat: no-repeat;
+  background-position: center;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+  display: inline-block;
+  font-size: 40px;
+  font-weight: 900;
+  padding: 20px;
+}
+
+.header .days p {
+  padding: 0;
+  margin: 0;
 }

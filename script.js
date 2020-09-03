@@ -6,10 +6,8 @@ function printdate() {
 
   diff = end - start;
 
-  const count =
-    Math.floor(diff / days) +
-    " days have passed since the murder of Breonna Taylor.";
+  const numberofdays = Math.floor(diff / days) + " days ";
 
-  document.getElementById("days").innerHTML = count;
+  document.getElementById("count").innerHTML = numberofdays;
 }
 printdate();

@@ -11,8 +11,8 @@ body {
   margin: 0 10%;
   height: 630px;
   //   overflow: hidden;
-  padding: 0 0 40px 60px;
-  border: red solid 2px;
+  padding: 0 0 40px 0;
+  // border: red solid 2px;
 }
 
 .box ul {
@@ -29,7 +29,7 @@ body {
 .box ul:last-of-type {
   top: 80px;
   border: bisque solid 2px;
-  padding-bottom: 300px;
+  margin-bottom: 300px;
 }
 
 .box ul:before {
@@ -75,7 +75,7 @@ body {
   background: #e3be58;
   border: 2px solid #fff;
   position: absolute;
-  left: -7.5px;
+  left: -4.5px;
 }
 
 .box ul li > span:before {

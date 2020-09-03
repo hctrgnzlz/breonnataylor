@@ -1,7 +1,49 @@
 @import "setup";
 @import "timeline";
+@import "variablemix";
 
-.test {
-  border: pink solid 2px;
-  padding-top: 400px;
+.header {
+  .title {
+    font-family: $title;
+    background-color: #000000;
+    color: #ffffff;
+    font-size: 40px;
+    font-weight: 900;
+    text-align: center;
+    margin: 0;
+  }
+
+  .banner {
+    width: 100%;
+    opacity: 0.8;
+    display: block;
+    border: #000000 solid 1px;
+  }
+
+  .days {
+    display: flex;
+    flex-direction: column;
+    font-family: $title;
+    margin-top: 20px;
+    width: auto;
+    text-align: center;
+    text-transform: uppercase;
+
+    & h1 {
+      background-image: url(/assets/red.png);
+      background-size: 100%;
+      background-repeat: no-repeat;
+      background-position: center;
+      align-self: center;
+      display: inline-block;
+      font-size: 40px;
+      font-weight: 900;
+      padding: 20px;
+    }
+
+    & p {
+      padding: 0;
+      margin: 0;
+    }
+  }
 }

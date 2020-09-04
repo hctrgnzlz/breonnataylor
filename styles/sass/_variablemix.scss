@@ -2,4 +2,17 @@
 
 //fonts//
 $title: "Montserrat", sans-serif;
-$text: "Roboto", sans-serif;
+$text: "Lato", sans-serif;
+
+//colors//
+$link-color: #f40d30;
+$text-color: #202020;
+
+//mixins//
+@mixin link {
+  text-decoration: none;
+  border-bottom: 1px solid $link-color;
+  box-shadow: inset 0 -1px 0 $link-color;
+  color: inherit;
+  transition: background 0.2s cubic-bezier(0.33, 0.66, 0.66, 1);
+}

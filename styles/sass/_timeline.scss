@@ -1,14 +1,9 @@
 // timeline framework credit https://codepen.io/mo7amedk7alid29/pen/dRoMwo
 
-body {
-  margin: 0;
-  padding: 0;
-  background-color: #e3be58;
-  font-family: arial;
-}
+@import "variablemix";
 
 .box {
-  margin: 0 10%;
+  margin: 0 15%;
   height: 630px;
   //   overflow: hidden;
   padding: 0 0 40px 0;
@@ -23,12 +18,12 @@ body {
   transition: all 0.5s linear;
   top: 0;
   margin-bottom: 30px;
-  border: black solid 2px;
+  // border: black solid 2px;
 }
 
 .box ul:last-of-type {
   top: 80px;
-  border: bisque solid 2px;
+  // border: bisque solid 2px;
   margin-bottom: 300px;
 }
 
@@ -48,7 +43,6 @@ body {
   position: relative;
   padding: 10px 20px;
   background: rgba(255, 255, 255, 0.3);
-  color: #fff;
   border-radius: 10px;
   line-height: 20px;
   width: 35%;
@@ -87,33 +81,61 @@ body {
 
 .box .title {
   text-transform: uppercase;
+  font-family: $title;
+  color: #000000;
   font-weight: 700;
   margin-bottom: 5px;
 }
 
-.box .info:first-letter {
-  text-transform: capitalize;
-  line-height: 1.7;
+.box .info {
+  color: $text-color;
 }
 
-.box .name {
+.box .source {
   margin-top: 10px;
   text-transform: capitalize;
   font-style: italic;
   text-align: right;
   margin-right: 20px;
+
+  & a {
+    text-decoration: none;
+    @include link;
+  }
+
+  & a:hover {
+    background: $link-color;
+    color: #fff;
+  }
 }
 
 .box .time span {
   position: absolute;
   left: -100px;
   color: #fff;
-  font-size: 80%;
-  font-weight: bold;
+  font-size: 14px;
+  font-family: $title;
+  font-weight: 700;
+  text-transform: uppercase;
+
+  & sup {
+    font-size: 8px;
+  }
 }
 .box .time span:first-child {
   top: -16px;
 }
+
+#year {
+  top: -60px;
+  font-size: 25px;
+  font-weight: none;
+  // text-decoration: underline;
+  border: 2px solid white;
+  padding: 6px;
+  font-family: $title;
+}
+
 .box .time span:last-child {
   top: 94%;
 }

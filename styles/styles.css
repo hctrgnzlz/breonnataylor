@@ -269,15 +269,8 @@ html {
   overflow: hidden;
 }
 
-body {
-  margin: 0;
-  padding: 0;
-  background-color: #e3be58;
-  font-family: arial;
-}
-
 .box {
-  margin: 0 10%;
+  margin: 0 15%;
   height: 630px;
   padding: 0 0 40px 0;
 }
@@ -291,12 +284,10 @@ body {
   transition: all 0.5s linear;
   top: 0;
   margin-bottom: 30px;
-  border: black solid 2px;
 }
 
 .box ul:last-of-type {
   top: 80px;
-  border: bisque solid 2px;
   margin-bottom: 300px;
 }
 
@@ -316,7 +307,6 @@ body {
   position: relative;
   padding: 10px 20px;
   background: rgba(255, 255, 255, 0.3);
-  color: #fff;
   border-radius: 10px;
   line-height: 20px;
   width: 35%;
@@ -356,16 +346,17 @@ body {
 
 .box .title {
   text-transform: uppercase;
+  font-family: "Montserrat", sans-serif;
+  color: #000000;
   font-weight: 700;
   margin-bottom: 5px;
 }
 
-.box .info:first-letter {
-  text-transform: capitalize;
-  line-height: 1.7;
+.box .info {
+  color: #202020;
 }
 
-.box .name {
+.box .source {
   margin-top: 10px;
   text-transform: capitalize;
   font-style: italic;
@@ -373,20 +364,58 @@ body {
   margin-right: 20px;
 }
 
+.box .source a {
+  text-decoration: none;
+  text-decoration: none;
+  border-bottom: 1px solid #f40d30;
+  -webkit-box-shadow: inset 0 -1px 0 #f40d30;
+          box-shadow: inset 0 -1px 0 #f40d30;
+  color: inherit;
+  -webkit-transition: background 0.2s cubic-bezier(0.33, 0.66, 0.66, 1);
+  transition: background 0.2s cubic-bezier(0.33, 0.66, 0.66, 1);
+}
+
+.box .source a:hover {
+  background: #f40d30;
+  color: #fff;
+}
+
 .box .time span {
   position: absolute;
   left: -100px;
   color: #fff;
-  font-size: 80%;
-  font-weight: bold;
+  font-size: 14px;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+.box .time span sup {
+  font-size: 8px;
 }
 
 .box .time span:first-child {
   top: -16px;
 }
 
+#year {
+  top: -60px;
+  font-size: 25px;
+  font-weight: none;
+  border: 2px solid white;
+  padding: 6px;
+  font-family: "Montserrat", sans-serif;
+}
+
 .box .time span:last-child {
   top: 94%;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  background-color: #e3be58;
+  font-family: "Lato", sans-serif;
 }
 
 .header .title {

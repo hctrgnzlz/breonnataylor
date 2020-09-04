@@ -2,6 +2,13 @@
 @import "timeline";
 @import "variablemix";
 
+body {
+  margin: 0;
+  padding: 0;
+  background-color: #e3be58;
+  font-family: $text;
+}
+
 .header {
   .title {
     font-family: $title;

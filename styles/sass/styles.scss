@@ -7,6 +7,35 @@ body {
   padding: 0;
   background-color: #e3be58;
   font-family: $text;
+
+  .info {
+    position: relative;
+    padding-left: 10px;
+    &:before {
+      content: "\201C";
+      font-size: 30px;
+      font-family: "Georgia", serif;
+      font-style: italic;
+      position: absolute;
+      top: 0.15em;
+      left: -0.12em;
+      color: #ffffff;
+      font-size: 6em;
+      z-index: -1;
+    }
+    &:after {
+      content: "\201D";
+      font-size: 30px;
+      font-family: "Georgia", serif;
+      font-style: italic;
+      position: absolute;
+      bottom: -0.3em;
+      right: 0.1em;
+      color: #ffffff;
+      font-size: 6em;
+      z-index: -1;
+    }
+  }
 }
 
 .header {

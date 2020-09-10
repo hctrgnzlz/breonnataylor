@@ -462,6 +462,26 @@ body .info:after {
   z-index: -1;
 }
 
+body .info a {
+  text-decoration: none;
+  text-decoration: none;
+  border-bottom: 1px solid #f40d30;
+  -webkit-box-shadow: inset 0 -1px 0 #f40d30;
+          box-shadow: inset 0 -1px 0 #f40d30;
+  color: inherit;
+  -webkit-transition: background 0.2s cubic-bezier(0.33, 0.66, 0.66, 1);
+  transition: background 0.2s cubic-bezier(0.33, 0.66, 0.66, 1);
+}
+
+body .info a:hover {
+  background: #f40d30;
+  color: #fff;
+}
+
+body .info p a {
+  font-style: italic;
+}
+
 .header .title {
   font-family: "Montserrat", sans-serif;
   background-color: #000000;

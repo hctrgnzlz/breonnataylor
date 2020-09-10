@@ -106,16 +106,7 @@
   font-style: italic;
   text-align: right;
   margin-right: 20px;
-
-  & a {
-    text-decoration: none;
-    @include link;
-  }
-
-  & a:hover {
-    background: $link-color;
-    color: #fff;
-  }
+  @include hover;
 }
 
 .box .time span {

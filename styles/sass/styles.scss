@@ -35,6 +35,12 @@ body {
       font-size: 6em;
       z-index: -1;
     }
+
+    @include hover;
+
+    & p a {
+      font-style: italic;
+    }
   }
 }
 

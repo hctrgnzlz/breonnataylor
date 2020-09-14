@@ -309,7 +309,7 @@ html {
   background: rgba(255, 255, 255, 0.3);
   border-radius: 10px;
   line-height: 20px;
-  width: 40%;
+  width: 60%;
 }
 
 .box ul li > span {
@@ -482,24 +482,103 @@ body .info p a {
   font-style: italic;
 }
 
-.header .title {
-  font-family: "Montserrat", sans-serif;
-  background-color: #000000;
-  color: #ffffff;
-  font-size: 40px;
-  font-weight: 900;
-  text-align: center;
+.nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   margin: 0;
+  padding: 0;
 }
 
-.header .banner {
-  width: 100%;
-  opacity: 0.8;
-  display: block;
-  border: #000000 solid 1px;
+.nav .list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+  -webkit-box-pack: right;
+      -ms-flex-pack: right;
+          justify-content: right;
+  margin: 0;
+  padding: 0;
 }
 
-.header .days {
+.nav .list .item {
+  list-style: none;
+  margin-right: 20px;
+}
+
+.nav .list .item span {
+  display: none;
+}
+
+.nav .list .item a {
+  font-size: 30px;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+
+.nav .list .item a a {
+  text-decoration: none;
+  text-decoration: none;
+  border-bottom: 1px solid #f40d30;
+  -webkit-box-shadow: inset 0 -1px 0 #f40d30;
+          box-shadow: inset 0 -1px 0 #f40d30;
+  color: inherit;
+  -webkit-transition: background 0.2s cubic-bezier(0.33, 0.66, 0.66, 1);
+  transition: background 0.2s cubic-bezier(0.33, 0.66, 0.66, 1);
+}
+
+.nav .list .item a a:hover {
+  background: #f40d30;
+  color: #fff;
+}
+
+.nav__toggle span,
+.nav__toggle #toggle {
+  display: none;
+}
+
+.nav__toggle .fas {
+  font-size: 30px;
+  top: -15px;
+}
+
+.nav__toggle .fas a {
+  text-decoration: none;
+  text-decoration: none;
+  border-bottom: 1px solid #f40d30;
+  -webkit-box-shadow: inset 0 -1px 0 #f40d30;
+          box-shadow: inset 0 -1px 0 #f40d30;
+  color: inherit;
+  -webkit-transition: background 0.2s cubic-bezier(0.33, 0.66, 0.66, 1);
+  transition: background 0.2s cubic-bezier(0.33, 0.66, 0.66, 1);
+}
+
+.nav__toggle .fas a:hover {
+  background: #f40d30;
+  color: #fff;
+}
+
+#circle {
+  background-image: url(/assets/bre.png);
+  background-size: cover;
+  background-position: center;
+  border-radius: 50% 50% 50% 50%;
+  width: 200px;
+  height: 200px;
+  margin: 10px 0 10px 0;
+  border: 5px solid black;
+}
+
+.header .hero {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -507,28 +586,140 @@ body .info p a {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+  -webkit-box-align: left;
+      -ms-flex-align: left;
+          align-items: left;
+}
+
+.header .hero .container {
+  font-family: "Montserrat", sans-serif;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  text-align: left;
+}
+
+.header .hero .container h1 {
+  margin: 0;
+  text-transform: uppercase;
+  font-size: 60px;
+  line-height: 47px;
+  text-shadow: 3px 3px 0px #ffffff;
+}
+
+.header #count {
+  text-shadow: 4px 4px 0px #000000;
+  color: #ffffff;
+}
+
+.header .days {
   font-family: "Montserrat", sans-serif;
   margin-top: 20px;
   width: auto;
-  text-align: center;
+  text-align: left;
   text-transform: uppercase;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: left;
+      -ms-flex-pack: left;
+          justify-content: left;
+  -webkit-box-align: left;
+      -ms-flex-align: left;
+          align-items: left;
+  margin: 0;
 }
 
 .header .days h1 {
   background-image: url(/assets/red.png);
-  background-size: 100%;
-  background-repeat: no-repeat;
-  background-position: center;
-  -ms-flex-item-align: center;
-      -ms-grid-row-align: center;
-      align-self: center;
   display: inline-block;
+  background-size: 100%;
   font-size: 40px;
   font-weight: 900;
   padding: 20px;
+  background-repeat: no-repeat;
+  background-position: center;
 }
 
 .header .days p {
   padding: 0;
   margin: 0;
+}
+
+@media (max-width: 768px) {
+  .nav__toggle {
+    display: block;
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    z-index: 99;
+    -webkit-user-select: none;
+       -moz-user-select: none;
+        -ms-user-select: none;
+            user-select: none;
+    text-transform: lowercase;
+  }
+  .nav__toggle input {
+    display: block;
+    width: 30px;
+    height: 30px;
+    position: absolute;
+    top: 0;
+    right: 0;
+    cursor: pointer;
+    opacity: 0;
+    z-index: 98;
+  }
+  .nav__toggle span,
+  .nav__toggle #toggle {
+    display: block;
+  }
+  .nav__toggle i {
+    position: relative;
+    top: 0px;
+    left: 0px;
+    z-index: 1;
+    display: inline-block;
+    font-size: 3rem;
+  }
+  .nav__toggle input:checked ~ ul {
+    -webkit-transform: none;
+            transform: none;
+    left: 0;
+  }
+  .nav .list {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    position: fixed;
+    top: -3%;
+    left: -150%;
+    width: 100%;
+    height: 110vh;
+    background-color: red;
+    -webkit-transition: all 0.5s ease-in;
+    transition: all 0.5s ease-in;
+  }
+  .nav .list .item {
+    margin: 0;
+  }
+  .nav .list .item a {
+    font-size: 50px;
+    padding: 15px;
+  }
+  .nav .list .item:first-child {
+    margin-top: 70px;
+  }
 }

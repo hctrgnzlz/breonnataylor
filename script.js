@@ -11,3 +11,16 @@ function printdate() {
   document.getElementById("count").innerHTML = numberofdays;
 }
 printdate();
+
+hamburgerMenu = function () {
+  const menu = document.getElementById("list");
+  const close = document.getElementById("toggle");
+
+  function handleMenuClick(event) {
+    if (event.target instanceof HTMLAnchorElement) {
+      close.checked = false;
+    }
+  }
+  menu.addEventListener("click", handleMenuClick);
+};
+hamburgerMenu();

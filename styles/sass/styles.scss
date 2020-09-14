@@ -44,43 +44,108 @@ body {
   }
 }
 
-.header {
-  .title {
-    font-family: $title;
-    background-color: #000000;
-    color: #ffffff;
-    font-size: 40px;
-    font-weight: 900;
-    text-align: center;
+.nav {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  // border: red solid 2px;
+  margin: 0;
+  padding: 0;
+
+  .list {
+    display: flex;
+    align-items: flex-end;
+    justify-content: right;
     margin: 0;
+    padding: 0;
+
+    .item {
+      list-style: none;
+      margin-right: 20px;
+
+      & span {
+        display: none;
+      }
+
+      & a {
+        font-size: 30px;
+        text-decoration: none;
+        text-transform: uppercase;
+        @include hover;
+      }
+    }
   }
 
-  .banner {
-    width: 100%;
-    opacity: 0.8;
-    display: block;
-    border: #000000 solid 1px;
+  &__toggle span,
+  &__toggle #toggle {
+    display: none;
+  }
+
+  &__toggle .fas {
+    font-size: 30px;
+    top: -15px;
+    @include hover;
+  }
+}
+
+#circle {
+  background-image: url(/assets/bre.png);
+  background-size: cover;
+  background-position: center;
+  border-radius: 50% 50% 50% 50%;
+  width: 200px;
+  height: 200px;
+  margin: 10px 0 10px 0;
+  border: 5px solid black;
+}
+
+.header {
+  .hero {
+    display: flex;
+    flex-direction: column;
+    align-items: left;
+
+    .container {
+      font-family: $title;
+      flex-direction: column;
+      text-align: left;
+
+      & h1 {
+        margin: 0;
+        text-transform: uppercase;
+        font-size: 60px;
+        line-height: 47px;
+        text-shadow: 3px 3px 0px #ffffff;
+      }
+    }
+  }
+
+  #count {
+    text-shadow: 4px 4px 0px #000000;
+    color: #ffffff;
   }
 
   .days {
-    display: flex;
-    flex-direction: column;
     font-family: $title;
     margin-top: 20px;
     width: auto;
-    text-align: center;
+    text-align: left;
     text-transform: uppercase;
+    display: flex;
+    flex-direction: column;
+    justify-content: left;
+    align-items: left;
+    margin: 0;
 
     & h1 {
       background-image: url(/assets/red.png);
-      background-size: 100%;
-      background-repeat: no-repeat;
-      background-position: center;
-      align-self: center;
       display: inline-block;
+      background-size: 100%;
       font-size: 40px;
       font-weight: 900;
       padding: 20px;
+      background-repeat: no-repeat;
+      background-position: center;
     }
 
     & p {
@@ -89,3 +154,5 @@ body {
     }
   }
 }
+
+@import "mediaqueries";

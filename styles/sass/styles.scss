@@ -54,34 +54,41 @@ body {
 
   .list {
     display: flex;
+    flex-direction: column;
     align-items: flex-end;
     justify-content: right;
     margin: 0;
     padding: 0;
 
     .item {
+      font-family: $title;
       list-style: none;
-      margin-right: 20px;
+      margin-right: 10px;
 
       & span {
         display: none;
       }
 
       & a {
-        font-size: 30px;
+        font-size: 40px;
         text-decoration: none;
         text-transform: uppercase;
-        @include hover;
+        color: #000000;
+        line-height: 30px;
+        @include nav;
       }
+    }
+    .item:first-child {
+      margin-top: 30px;
     }
   }
 
-  &__toggle span,
-  &__toggle #toggle {
+  .toggle span,
+  .toggle #toggle {
     display: none;
   }
 
-  &__toggle .fas {
+  .toggle .fas {
     font-size: 30px;
     top: -15px;
     @include hover;
@@ -93,8 +100,8 @@ body {
   background-size: cover;
   background-position: center;
   border-radius: 50% 50% 50% 50%;
-  width: 200px;
-  height: 200px;
+  width: 250px;
+  height: 250px;
   margin: 10px 0 10px 0;
   border: 5px solid black;
 }
@@ -151,6 +158,28 @@ body {
     & p {
       padding: 0;
       margin: 0;
+    }
+  }
+}
+
+.resources {
+  padding-left: 40px;
+  font-family: $title;
+  margin-top: 30px;
+  & h1 {
+    font-size: 40px;
+    text-transform: uppercase;
+    text-shadow: 3px 3px 0px #ffffff;
+    margin: 0;
+  }
+
+  .links {
+    display: flex;
+    flex-direction: column;
+    & a {
+      @include nav;
+      text-transform: uppercase;
+      font-size: 30px;
     }
   }
 }

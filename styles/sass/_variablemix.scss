@@ -30,3 +30,19 @@ $text-color: #202020;
     color: #fff;
   }
 }
+
+@mixin nav {
+  display: inline-block;
+  overflow: hidden;
+  background: linear-gradient(to right, #ffffff, #ffffff 50%, #000000 50%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-size: 200% 100%;
+  background-position: 100%;
+  transition: background-position 400ms ease;
+  text-decoration: none;
+  &:hover {
+    background-position: 0 100%;
+  }
+}

@@ -288,7 +288,7 @@ html {
 
 .box ul:last-of-type {
   top: 80px;
-  margin-bottom: 300px;
+  margin-bottom: 150px;
 }
 
 .box ul:before {
@@ -588,6 +588,10 @@ body .info p a {
   border: 5px solid black;
 }
 
+.header {
+  padding-left: 60px;
+}
+
 .header .hero {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -661,6 +665,11 @@ body .info p a {
   margin: 0;
 }
 
+.header .days .update {
+  color: #e8e8e8;
+  margin-top: 20px;
+}
+
 .resources {
   padding-left: 40px;
   font-family: "Montserrat", sans-serif;
@@ -703,6 +712,47 @@ body .info p a {
 
 .resources .links a:hover {
   background-position: 0 100%;
+}
+
+.footer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding-left: 40px;
+  margin-top: 30px;
+}
+
+.footer a {
+  text-decoration: none;
+  padding-right: 10px;
+  color: #000000;
+}
+
+.footer img {
+  width: 50px;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+}
+
+.footer img:hover {
+  -webkit-transform: scale(1.3);
+          transform: scale(1.3);
+}
+
+.footer .fas,
+.footer .fab {
+  font-size: 40px;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+}
+
+.footer .fas:hover,
+.footer .fab:hover {
+  -webkit-transform: scale(1.3);
+          transform: scale(1.3);
 }
 
 @media (max-width: 768px) {

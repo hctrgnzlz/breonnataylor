@@ -309,7 +309,7 @@ html {
   background: rgba(255, 255, 255, 0.3);
   border-radius: 10px;
   line-height: 20px;
-  width: 60%;
+  width: 70%;
 }
 
 .box ul li > span {
@@ -597,10 +597,6 @@ body .info p a {
   border: 5px solid black;
 }
 
-.header {
-  padding-left: 60px;
-}
-
 .header .hero {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -680,7 +676,6 @@ body .info p a {
 }
 
 .resources {
-  padding-left: 40px;
   font-family: "Montserrat", sans-serif;
   margin-top: 30px;
 }
@@ -769,7 +764,7 @@ body .info p a {
     display: block;
     position: fixed;
     top: 20px;
-    right: 20px;
+    right: 10px;
     z-index: 99;
     -webkit-user-select: none;
        -moz-user-select: none;
@@ -857,5 +852,23 @@ body .info p a {
   }
   .nav .list .item:first-child {
     margin-top: 70px;
+  }
+  .resources h1 {
+    font-size: 35px;
+  }
+  .resources .links a {
+    font-size: 25px;
+  }
+}
+
+@media (max-width: 680px) {
+  .box ul li {
+    width: 250px;
+  }
+  .header {
+    margin-left: -30px;
+  }
+  .resources .links a {
+    font-size: 20px;
   }
 }

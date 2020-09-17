@@ -4,7 +4,7 @@
       display: block;
       position: fixed;
       top: 20px;
-      right: 20px;
+      right: 10px;
       z-index: 99;
       user-select: none;
       text-transform: lowercase;
@@ -84,6 +84,36 @@
       }
       .item:first-child {
         margin-top: 70px;
+      }
+    }
+  }
+
+  .resources {
+    & h1 {
+      font-size: 35px;
+    }
+    .links {
+      & a {
+        font-size: 25px;
+      }
+    }
+  }
+}
+
+@media (max-width: 680px) {
+  .box ul li {
+    width: 250px;
+  }
+
+  .header {
+    margin-left: -30px;
+    // border: solid pink 2px;
+  }
+
+  .resources {
+    .links {
+      & a {
+        font-size: 20px;
       }
     }
   }

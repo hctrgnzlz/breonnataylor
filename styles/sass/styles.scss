@@ -117,7 +117,7 @@ body {
 }
 
 .header {
-  padding-left: 60px;
+  // padding-left: 60px;
 
   .hero {
     display: flex;
@@ -180,7 +180,7 @@ body {
 }
 
 .resources {
-  padding-left: 40px;
+  // padding-left: 40px;
   font-family: $title;
   margin-top: 30px;
   & h1 {
@@ -209,7 +209,6 @@ body {
   & a {
     text-decoration: none;
     padding-right: 30px;
-
     color: #000000;
   }
 

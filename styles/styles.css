@@ -587,7 +587,7 @@ body .info p a {
 }
 
 #circle {
-  background-image: url(/assets/bre.png);
+  background-image: url(../assets/bre.png);
   background-size: cover;
   background-position: center;
   border-radius: 50% 50% 50% 50%;
@@ -655,7 +655,7 @@ body .info p a {
 }
 
 .header .days h1 {
-  background-image: url(/assets/red.png);
+  background-image: url(../assets/red.png);
   display: inline-block;
   background-size: 100%;
   font-size: 40px;

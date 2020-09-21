@@ -691,6 +691,7 @@ body .info p a {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  display: inline-block;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
@@ -712,6 +713,7 @@ body .info p a {
   text-decoration: none;
   text-transform: uppercase;
   font-size: 30px;
+  display: block;
 }
 
 .resources .links a:hover {
@@ -863,7 +865,7 @@ body .info p a {
 
 @media (max-width: 680px) {
   .box ul li {
-    width: 250px;
+    width: 90%;
   }
   .header {
     margin-left: -30px;

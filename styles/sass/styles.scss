@@ -192,11 +192,14 @@ body {
 
   .links {
     display: flex;
+    display: inline-block;
     flex-direction: column;
+
     & a {
       @include nav;
       text-transform: uppercase;
       font-size: 30px;
+      display: block;
     }
   }
 }

@@ -12,6 +12,8 @@ function printdate() {
 }
 printdate();
 
+
+
 hamburgerMenu = function () {
   const menu = document.getElementById("list");
   const close = document.getElementById("toggle");

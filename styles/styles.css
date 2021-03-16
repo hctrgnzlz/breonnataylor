@@ -903,4 +903,7 @@ body .info p a {
   .resources .links a {
     font-size: 20px;
   }
+  .bibliography {
+    padding-left: 40px;
+  }
 }
